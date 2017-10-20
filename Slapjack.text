@@ -3,19 +3,32 @@ Slap Jack Rules:
 1. Gather a minimum of 2 players but not more than 8 players
 2. Make sure your card deck has no jokers
 3. Shuffle the cards then deal the cards as evenly as possible 
-4. Depending on the number of the people that are playing will determine how many cards you have to distribute to each person
+4. Depending on the number of the people that are playing will determine, how many cards you have to distribute to each person will vary
 5. Once the cards are distributed evenly to each person, make sure that the cards each player has are neatly facedown.
  Gameplay:
  Do reptition
-Starting with the player to the left to the dealer(person who distributed cards) will start to place one card in the pile face up.
-Then the next player will place one card in the pile face up and so on.
-If the card is a jack, the first person to slap the card  gets the whole pile of cards and the dealer reshuffles the cards and we restart. 
-If the card placed in the pile is a jack but no one slaps the card, the players just place the next card in the pile.
-while 
+Pick one player to place the first card in the pile face up and the proceed in ascending order.
+Then the next player in the ascending order will place one card in the pile face up and so on.
+If the card is a jack:
+then the first person to slap the card  gets the whole pile of cards and the dealer reshuffles the cards and the game continues. 
+If the card placed in the pile is a jack but no one slaps:
+then the card the players just place the next card in the pile.
+can slap = false
+curr player = player 1 
+curr player Handsize = player 1 handsize:
+while {currplayer handsize > 0}
+currplayer plays card 
+if {card on top of discard is Jack}
+ can slap=true
+else:
+ can slap = false 
+if Player 1 or Player 2 slaps:
+ if can slap:
+  deck goes to who slaps
 If you have the whole deck:
      then you win the game:
     Else if another person has the whole deck:
-     then the player wins the game
+     then the player with the whole deck wins the game
     Else:
      While no one has the whole deck:
       Then you play another round
